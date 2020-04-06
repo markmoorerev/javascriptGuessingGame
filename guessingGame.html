@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Number guessing game</title>
-    <script>guessingGame.css</script>
-    <script>guessingGame.js</script>
+    <link 
+      rel = "stylesheet"
+      type = "text/css"
+      href = "guessingGame.css" />
   </head>
 
   <body>
@@ -13,7 +15,8 @@
     <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
 
     <div class="form">
-      <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+      <label for="guessField">Enter a guess: </label>
+      <input type="text" id="guessField" class="guessField">
       <input type="submit" value="Submit guess" class="guessSubmit">
     </div>
 
@@ -21,6 +24,9 @@
       <p class="guesses"></p>
       <p class="lastResult"></p>
       <p class="lowOrHi"></p>
+      <p class="invalidInput"></p>
     </div>
+    <script src="guessingGame.js"></script>
   </body>
 </html>
+<script src="guessingGame.js">
